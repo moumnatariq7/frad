@@ -117,13 +117,6 @@ class _SplashScreenState extends State<SplashScreen>
 
               const Spacer(),
 
-              const CircularProgressIndicator(
-                color: Colors.white,
-                strokeWidth: 3,
-              ),
-
-              const SizedBox(height: 25),
-
               const Text(
                 "Save Food • Save Money • Help Communities",
                 style: TextStyle(color: Colors.white, fontSize: 14),
