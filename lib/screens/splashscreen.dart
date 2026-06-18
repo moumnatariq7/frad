@@ -44,7 +44,11 @@ class _SplashScreenState extends State<SplashScreen>
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0F766E), Color(0xFF14B8A6), Color(0xFF5EEAD4)],
+            colors: [
+              Color.fromARGB(255, 204, 82, 1),
+              Color.fromARGB(255, 227, 143, 7),
+              Color.fromARGB(255, 227, 185, 114),
+            ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -64,16 +68,16 @@ class _SplashScreenState extends State<SplashScreen>
                     borderRadius: BorderRadius.circular(30),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.15),
+                        color: Colors.black26,
                         blurRadius: 15,
-                        offset: const Offset(0, 8),
+                        offset: Offset(0, 8),
                       ),
                     ],
                   ),
                   child: const Icon(
-                    Icons.volunteer_activism,
+                    Icons.food_bank,
                     size: 70,
-                    color: Color(0xFF0F766E),
+                    color: Color(0xFFE67E22),
                   ),
                 ),
               ),
@@ -97,7 +101,7 @@ class _SplashScreenState extends State<SplashScreen>
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
 
@@ -108,18 +112,19 @@ class _SplashScreenState extends State<SplashScreen>
                 child: Text(
                   "Reducing Food Waste Through Smart Distribution",
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.95),
-                    fontSize: 15,
-                  ),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
               ),
 
               const Spacer(),
 
               const Text(
-                "Save Food • Save Money • Help Communities",
-                style: TextStyle(color: Colors.white, fontSize: 14),
+                "Save Food • Save Lives • Help Communities",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
 
               const SizedBox(height: 35),
